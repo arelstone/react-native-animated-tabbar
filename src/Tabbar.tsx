@@ -1,14 +1,12 @@
 import React, { FC } from 'react';
 import { SafeAreaView, Dimensions, StyleSheet, Animated, View } from 'react-native';
-import { Path, Svg, PathProps, SvgProps } from 'react-native-svg';
+import { Path, Svg } from 'react-native-svg';
 import { ActiveCircleProps } from './Circle';
 import { shapes } from './shapes';
 import StaticTabbar, { TabsProp } from './StaticTabbar';
 import Constants from './constants';
 interface TabbarProps extends TabsProp, ActiveCircleProps {
     backgroundColor?: string;
-    pathProps?: PathProps;
-    svgProps?: SvgProps;
 }
 
 const { width } = Dimensions.get('window');

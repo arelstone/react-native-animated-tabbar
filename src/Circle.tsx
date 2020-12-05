@@ -7,7 +7,7 @@ interface CircleProps extends ActiveCircleProps, ColorProps, ActiveIconProp {
     width: number;
     height: number;
     index: number;
-    translateY: Animated.AnimatedInterpolation;
+    translateY?: Animated.AnimatedInterpolation;
 }
 
 export type ActiveCircleProps = {
@@ -34,6 +34,7 @@ const Circle: FC<CircleProps> = ({
         ]}
     >
         <View
+            testID="Circle"
             style={[
                 styles.circle,
                 {

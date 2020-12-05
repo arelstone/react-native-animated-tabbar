@@ -3,6 +3,7 @@ import { View, TouchableWithoutFeedback, StyleSheet, Animated, StyleProp, TextSt
 import Circle, { ActiveCircleProps } from './Circle';
 import Label from './Label';
 import Constants from './constants';
+import { testId } from './utils/testHelpers';
 
 type Tab = IconProp & ActiveIconProp & {
     label?: string;
@@ -42,7 +43,8 @@ const StaticTabbar: FC<StaticTabbarProps> = ({
     const tabWidth = width / tabs.length;
     const handleOnPress = (toIndex: number) => {
         tabs[toIndex].onPress();
-        Animated.sequence([
+
+        return Animated.sequence([
             ...values.map(value => Animated.timing(
                 value,
                 { toValue: 0, useNativeDriver: true, duration: circleAnimationDurationMs },
@@ -69,7 +71,10 @@ const StaticTabbar: FC<StaticTabbarProps> = ({
             const translateY = activeValue.interpolate({ inputRange: [0, 1], outputRange: [height, 0] });
 
             return <Fragment key={`Tab_${index}`}>
-                <TouchableWithoutFeedback onPress={() => handleOnPress(index)}>
+                <TouchableWithoutFeedback
+                    onPress={() => handleOnPress(index)}
+                    testID={`Tab_${index}`}
+                >
                     <Animated.View style={[styles.tab, { opacity, height }]}>
                         {icon}
                         {label && <Label
@@ -79,6 +84,7 @@ const StaticTabbar: FC<StaticTabbarProps> = ({
                     </Animated.View>
                 </TouchableWithoutFeedback>
                 <Circle
+                    {...testId(`Circle_${index}`)}
                     {...{
                         activeIcon, backgroundColor, height, index, circleContainerStyle,
                         circleSize, circleStyle, translateY,
