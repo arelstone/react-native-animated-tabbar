@@ -10,7 +10,7 @@ This package leverages on [react-native-svg](https://github.com/react-native-svg
 ![GitHub issues](https://shields.cdn.bka.li/github/issues/arelstone/react-native-animated-tabbar?style=for-the-badge)
 ![GitHub pull requests](https://shields.cdn.bka.li/github/issues-pr/arelstone/react-native-animated-tabbar?style=for-the-badge)
 
-![@arelstone/react-native-animated-tabbar](https://github.com/arelstone/react-native-animated-tabbar/blob/master/docs/example.png?raw=true)
+![@arelstone/react-native-animated-tabbar](https://raw.githubusercontent.com/arelstone/react-native-animated-tabbar/master/docs/example.gif)
 
 ## Install
 ```sh
