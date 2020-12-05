@@ -2,19 +2,46 @@
     "compilerOptions": {
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "isolatedModules": true,
-        "jsx": "react",
+        "esModuleInterop": false,
+        "isolatedModules": false,
+        "jsx": "react-native",
         "lib": [
-            "es6"
+            "es6",
+            "ESNext"
         ],
         "moduleResolution": "node",
-        "noEmit": true,
+        "noEmit": false,
         "strict": true,
-        "target": "esnext"
+        "target": "ESNext",
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "importHelpers": false,
+        "alwaysStrict": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictFunctionTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictPropertyInitialization": false,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./@types"
+        ],
+        "declaration": true,
+        "outDir": "./@types",
+        "checkJs": true,
+        "emitDeclarationOnly": true,
     },
     "exclude": [
         "node_modules",
-        "jest.config.js"
-    ]
+        "src/__tests__"
+    ],
+    "include": [
+        "src",
+        "./types.d.ts"
+    ],
 }
