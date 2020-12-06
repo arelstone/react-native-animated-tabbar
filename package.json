@@ -1,12 +1,11 @@
 {
   "name": "@arelstone/react-native-animated-tabbar",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Tabbar for react native with a very nice animation when changing tabs",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --notify --detectOpenHandles --color --runInBand --forceExit",
-    "typings": "tsc -d ./src/Tabbar.tsx --emitDeclarationOnly --jsx 'react-native' --outFile ./index.d.ts"
+    "test": "jest --notify --detectOpenHandles --color --runInBand --forceExit"
   },
   "author": {
     "name": "Carsten Daurehøj <arelstone>",
