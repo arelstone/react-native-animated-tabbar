@@ -28,7 +28,6 @@ For ios remember to run `pod install` in the `./ios`-directory to apply [react-n
 | tabs               	| { icon: ReactElement; activeIcon: ReactElement; onPress: () => void; label?: string;}	| An array of tabs that will be displayed 	|
 | backgroundColor      	| string (optional)	| Set the backgroundColor of the  tabbar and the circle. Default: white	|
 | circleAnimationDurationMs	| number (optional)	| Change the duration of the circle animation. Defualt: 100	|
-| circleAnimationDurationMs	| number (optional)	| Change the duration of the circle animation. Defualt: 100	|
 | circleContainerStyle	| StyleProp<ViewStyle> (optional)	| Apply some styling the the container that holds the circles	|
 | circleSize	| number (optional)	| The size of the circle. Default 40	|
 | circleStyle	| StyleProp<ViewStyle>  (optional)	| Apply some styling for the circles	|
