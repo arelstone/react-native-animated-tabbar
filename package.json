@@ -1,6 +1,6 @@
 {
   "name": "@arelstone/react-native-animated-tabbar",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Tabbar for react native with a very nice animation when changing tabs",
   "main": "index.js",
   "scripts": {
